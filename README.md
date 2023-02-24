@@ -5,3 +5,5 @@
 ## CI is responsible to test requirements file and docker build.
 
 ## CD is responsible to push docker image to docker hub, and deploy updated image to EC2.
+
+Public URL: http://100.24.244.238/docs
