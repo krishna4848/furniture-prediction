@@ -1,0 +1,25 @@
+name: CI- Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Test-Code:
+    name: Testing Python Code
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v2
+    - name: Install & Tests
+      run: |
+        pip install -r requirements.txt
+
+  Test-Image:
+    name: Testing Docker Image
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v2
+    - name: Install & Tests
+      run: |
+        docker build -t model_testing .
