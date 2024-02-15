@@ -12,7 +12,7 @@ app = FastAPI(title='Furniture Classification using CNN: UW', description=app_de
 @app.get('/')
 @app.get("/", include_in_schema=False)
 async def index():
-    return RedirectResponse(url="/https://youtube.com/")
+    return RedirectResponse(url="/docs")
 
 @app.post('/predict/image')
 async def predict_image(image_link: str = ""):
