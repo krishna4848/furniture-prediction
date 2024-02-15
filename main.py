@@ -6,7 +6,7 @@ from keras.models import load_model
 import cv2
 import numpy as np
 
-app_desc = """<h2>Furniture Classification using CNN: UW2</h2>"""
+app_desc = """<h2>Furniture Classification using CNN: UW</h2>"""
 
 app = FastAPI(title='Furniture Classification using CNN: UW', description=app_desc)
 @app.get('/')
